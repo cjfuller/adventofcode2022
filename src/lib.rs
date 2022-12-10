@@ -6,7 +6,7 @@ pub fn read_input(day: u8) -> String {
     std::fs::read_to_string(
         Path::new(env!("CARGO_MANIFEST_DIR"))
             .join("inputs")
-            .join(format!("day{day}.txt")),
+            .join(format!("day{day:02}.txt")),
     )
     .unwrap()
 }
