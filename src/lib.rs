@@ -34,3 +34,14 @@ where
         .map(|it| it.parse().unwrap())
         .collect()
 }
+
+pub fn read_blank_line_delimited_blocks_as<T>(day: u8) -> Vec<T>
+where
+    T: FromStr,
+    T::Err: Debug,
+{
+    read_input(day)
+        .split("\n\n")
+        .map(|it| it.parse().unwrap())
+        .collect()
+}
