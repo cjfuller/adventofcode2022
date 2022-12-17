@@ -8,6 +8,7 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "3.11"
 networkx = "^2.8.8"
+numpy = "1.23.0"
 
 [tool.poetry.dev-dependencies]
 ruff = "^0.0.183"
